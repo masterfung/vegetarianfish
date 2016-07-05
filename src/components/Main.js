@@ -1,22 +1,21 @@
 require('normalize.css/normalize.css');
-require('styles/App.css');
+require('styles/App.styl');
 
 import React from 'react';
 
-let yeomanImage = require('../images/yeoman.png');
-
-class AppComponent extends React.Component {
+class StorePicker extends React.Component {
   render() {
     return (
-      <div className="index">
-        <img src={yeomanImage} alt="Yeoman Generator" />
-        <div className="notice">Please edit <code>src/components/Main.js</code> to get started!</div>
-      </div>
+      <form className='store-selector'>
+        <h2>Type A Store Name</h2>
+        <input type='text' ref='storeId' required />
+        <input type='submit' className='btn' value='Submit' />
+      </form>
     );
   }
 }
 
-AppComponent.defaultProps = {
+StorePicker.defaultProps = {
 };
 
-export default AppComponent;
+export default StorePicker;
