@@ -1,6 +1,3 @@
-require('normalize.css/normalize.css');
-require('styles/App.styl');
-
 import React from 'react';
 
 class StorePicker extends React.Component {
