@@ -1,7 +1,7 @@
 {
   "generator-react-webpack": {
     "appName": "catchOfTheDay",
-    "style": "scss",
+    "style": "styl",
     "postcss": true,
     "generatedWithVersion": 3
   }
