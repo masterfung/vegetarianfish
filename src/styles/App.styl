@@ -82,7 +82,7 @@ header.top
       flex-basis 50%
       transform translateX(-50%) rotateY(10deg) translateX(50%) scale(1.08) translateX(24px)
 
-// Folding Transforms
+// Folding transforms
 // Take off folding when not checked
 input#fold:not(:checked) ~ #main
   .catch-of-the-day > *
@@ -291,3 +291,8 @@ button, input[type=submit]
     &[type="text"]
       text-align center
       font-size 3rem
+    &[type="submit"]
+      padding 0 20px
+      font-size 2rem
+      &:hover
+        background: black
