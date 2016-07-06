@@ -83,6 +83,8 @@ class App extends React.Component {
         <Inventory
           addFish={this.addFish.bind(this)}
           loadFish={this.loadFish.bind(this)}
+          fishes={this.state.fishes}
+          linkState={this.linkState}
          />
       </div>
     )
@@ -90,6 +92,5 @@ class App extends React.Component {
 }
 
 reactMixin.onClass(App, Catalyst.LinkedStateMixin);
-
 
 export default App;
